@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>8E Exercise</title>
+  </head>
+  <body>
+    <script>
+      const product1 = {
+        name: "pro1",
+        price: 300,
+      };
+
+      const product2 = {
+        name: "pro1",
+        price: 300,
+      };
+
+      const isSameProduct = (pro1, pro2) => {
+        if (pro1.name === pro2.name && pro1.price === pro2.price) return true;
+        else return false;
+      };
+
+      const result = isSameProduct(product1, product2);
+      console.log(result);
+    </script>
+  </body>
+</html>
