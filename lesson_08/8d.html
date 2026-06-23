@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>8D Exercise</title>
+  </head>
+  <body>
+    <script>
+      const product1 = {
+        name: "pro1",
+        price: 300,
+      };
+
+      const product2 = {
+        name: "pro2",
+        price: 400,
+      };
+      const comparePrice = (product1, product2) => {
+        const pro = product1.price > product2.price ? product1 : product2;
+        return pro;
+      };
+      const product = comparePrice(product1, product2);
+      console.log(product);
+    </script>
+  </body>
+</html>
