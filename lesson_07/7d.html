@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>7D Exercise</title>
+  </head>
+  <body>
+    <script>
+      const convertToFahrenheit = (celsius) => {
+        const f = (celsius * 9) / 5 + 32;
+        return f;
+      };
+
+      const convertToCelsius = (fahrenheit) => {
+        const c = ((fahrenheit - 32) * 5) / 9;
+        return c;
+      };
+
+      const convertToTemperature = (degree, unit) => {
+        if (unit === "F") {
+          const result = (degree * 9) / 5 + 32;
+          return `${result}F`;
+        } else {
+          const result = ((degree - 32) * 5) / 9;
+          return `${result}F`;
+        }
+      };
+
+      console.log(`Độ F: ${convertToFahrenheit(25)}`);
+      console.log(`Độ C: ${convertToCelsius(86)}`);
+
+      console.log(convertToTemperature(86, "C"));
+    </script>
+  </body>
+</html>
